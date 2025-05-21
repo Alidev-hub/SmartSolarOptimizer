@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SSO - Smart Solar Optimizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>SSO</h1>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Accueil</a></li>
+                <!-- Ajoute d'autres liens ici si besoin -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2025 Smart Solar Optimizer. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
